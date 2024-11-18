@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personal Details</title>
+    </head>
+    <body>
+        <h2>My First Form</h2>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            <form>
+                <p>
+                    <label>Salutation:</label><br>
+                    <select id="salutation-id" name="salutation">
+                        <option>None</option>
+                        <option>Dr.</option>
+                        <option>Prof.</option>
+                        <option>Mr.</option>
+                        <option>Mrs.</option>
+                        <option>Ms</option>
+                    </select>
+                </p>
+                <p>
+                    <label> First Name:</label>
+                    <input id="first-name-id" type="text" name="first-name" />
+                </p>
+                <p>
+                    <label> Last Name:</label>
+                    <input id="last-name-id" type="text" name="last-name" />
+                </p>
+                <p>
+                    <label>Gender:</label><br>
+                    <label><input id="gender-male-id" type="radio" name="gender"/>Male</label>
+                    <label><input id="gender-female-id" type="radio" name="gender"/>Female</label>
+                    <label><input id="gender-non-binary-id" type="radio" name="gender"/>NonBinary</label>
+                    <label><input id="gender-other-id" type="radio" name="gender"/>Other</label>
+                </p>
+                <p>
+                    <label>Email:</label>
+                    <input id="email-id" type="email" name="email" />
+                </p>
+                <p>
+                    <label>Day of Birth:</label>
+                    <input id="birthday" type="date" name="birthday"/>
+                </p>
+                <p>
+                    <label>Address:</label><br>
+                    <textarea id="address-id" name="address" rows="5" cols="50"></textarea>
+                </p>
+                <p>
+                    <input id="gdpr-id" type="checkbox" name="gdpr"/>
+                    <label>Agree with terms and conditions</label>
+                </p>
+                <p>
+                    <button id="submit-id" name="submit">Submit</button>
+                </p>
+            </form>
+        </fieldset>
+    </body>
+</html>

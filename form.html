@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personal Details</title>
+        <style>
+            input:not([type="radio"]):not([type="checkbox"]), select {
+                width: 450px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            select {
+                appearance: none !important;
+                background-image: url(data:image/png;base64,https://w7.pngwing.com/pngs/271/297/png-transparent-arrow-golden-gate-fields-drop-down-list-arrow-thumbnail.png);
+                background-repeat: no-repeat;
+                background-position: right;
+            
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                width: 450px;
+                border: none;
+                padding: 8px 0;
+                border-radius: 10px;    
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #29752c;
+            }
+
+            section {
+                padding: 5px;
+                background-color: #f2f2f2;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h2>My First Form</h2>
+        <section>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <form>
+                    <p>
+                        <label>Salutation:</label><br>
+                        <select id="salutation-id" name="salutation">
+                            <option>None</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                            <option>Mr.</option>
+                            <option>Mrs.</option>
+                            <option>Ms</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label> First Name:</label><br>
+                        <input id="first-name-id" type="text" name="first-name" />
+                    </p>
+                    <p>
+                        <label> Last Name:</label><br>
+                        <input id="last-name-id" type="text" name="last-name" />
+                    </p>
+                    <p>
+                        <label>Gender:</label><br>
+                         <label><input id="gender-male-id" type="radio" name="gender"/>Male</label>
+                         <label><input id="gender-female-id" type="radio" name="gender"/>Female</label>
+                         <label><input id="gender-non-binary-id" type="radio" name="gender"/>NonBinary</label>
+                         <label><input id="gender-other-id" type="radio" name="gender"/>Other</label>
+                    </p>
+                    <p>
+                        <label>Email:</label><br>
+                        <input id="email-id" type="email" name="email" />
+                    </p>
+                    <p>
+                        <label>Day of Birth:</label><br>
+                        <input id="birthday" type="date" name="birthday"/>
+                    </p>
+                    <p>
+                        <label>Address:</label><br>
+                        <textarea id="address-id" name="address" rows="5" cols="50"></textarea>
+                    </p>
+                    <p>
+                        <input id="gdpr-id" type="checkbox" name="gdpr"/>
+                        <label>Agree with terms and conditions</label>
+                    </p>
+                    <p>
+                        <button id="submit-id" name="submit">Submit</button>
+                    </p>
+                </form>
+            </fieldset>
+        </section>
+    </body>
+</html>
