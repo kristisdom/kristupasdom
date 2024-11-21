@@ -10,16 +10,16 @@
 <body>
     <div class = "myDiv">
         <h1>Brandon Johnson</h1>
-        <button id ="twitter-id" name="twitter">
+        <button class="socialbutton" id ="twitter-id" name="twitter">
             <img src="Buttons/twitter.png" alt="Clickable Image" style="width: 10px; height: 10px;">
         </button>
-        <button id ="fb-id" name="fb">
+        <button class="socialbutton" id ="fb-id" name="fb">
             <img src="Buttons/fb.png" alt="Clickable Image" style="width: 10px; height: 10px;">
         </button>
-        <button id ="ig-id" name="ig">
+        <button class="socialbutton" id ="ig-id" name="ig">
             <img src="Buttons/ig.png" alt="Clickable Image" style="width: 10px; height: 10px;">
         </button>
-        <button id ="in-id" name="in">
+        <button class="socialbutton" id ="in-id" name="in">
             <img src="Buttons/in.png" alt="Clickable Image" style="width: 10px; height: 10px;">
         </button>
     </div>
@@ -152,6 +152,21 @@
         <audio src = "Audio/classical.mp3" controls>
         </audio>
     </div>
+
+    <button class="mode" onclick="darkMode()">Dark</button>
+    <button class="mode" onclick="lightMode()">Light</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+        }
+    </script>
 </body>
 </html>
 

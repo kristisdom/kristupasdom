@@ -36,8 +36,14 @@ p {
     color: rgb(88, 86, 86)
 }
 
-button {
+.socialbutton {
     color: white;
+    border: none;  
+    cursor: pointer;
+}
+
+.mode {
+    color: black;
     border: none;  
     cursor: pointer;
 }
@@ -69,4 +75,14 @@ button:active {
     display: grid;
     grid-template-areas: 'one two';
     padding: 40px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
 }
