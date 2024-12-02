@@ -90,6 +90,11 @@ button:active {
     background-color: #555; 
   }
 
+.intro {
+    display: grid;
+    grid-template-areas: "one two";
+}
+
 .containerimag {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
