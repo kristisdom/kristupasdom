@@ -173,32 +173,91 @@
             <audio src = "Audio/classical.mp3" controls></audio>
         </div>
 
-        <button class = "themeButton" id="themeButton">Switch to Dark Theme</button>
-        <script src="functions.js"></script>
+        <math display = "block">
+            <mrow>
+                <mi>f</mi> <!--kintamojo pavadinimas-->
+                <mi>(a)</mi>
+                <mo>=</mo> <!--operatorius-->
+                <mfrac> <!--trupmena, pirmomi eliutė - skaitiklis,
+                antroji - vardiklis-->
+                    <mi>1</mi>
+                    <mi>2&#928i</mi>
+                </mfrac>
+                <mi>&#8750</mi>
+                <mfrac>
+                    <mi>f(z)</mi>
+                    <mrow> <!--grupuoja sekančias eilutes į vieną-->
+                        <mi>z</mi>
+                        <mo>-</mo>
+                        <mi>a</mi>
+                    </mrow>
+                </mfrac>
+                <mi>dz</mi>
+            </mrow>
+        </math>
+
+        <div class="contact"> 
+            <h2>Contact</h2>
+            <div class="row">
+                <div class="column1">
+                    <form id="contactForm">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required><br>
+                        </p>
+                        <p>
+                            <label for="surname">Surname:</label>
+                            <input type="text" id="surname" required><br>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required><br>
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" required><br>
+                        </p>
+                        <p>
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" required><br>
+                        </p>
+                        <p>
+                    </form>
+                </div>
+                <div class="column2">
+                    <form id="contactForm">
+                        <p>
+                            <label for="q1">How are you feeling today? (1-10):</label>
+                            <input type="number" id="q1" min="1" max="10" required><br>
+                        </p>
+                
+                        <p>
+                            <label for="q2">How much do you like your page design? (1-10):</label>
+                            <input type="number" id="q2" min="1" max="10" required><br>
+                        </p>
+                        <p>
+                            <label for="q3">How clear is the given information? (1-10):</label>
+                            <input type="number" id="q3" min="1" max="10" required><br>
+                        </p>
+                        <p>
+                            <label for="q4">How much do you like the speed of our website? (1-10):</label>
+                            <input type="number" id="q4" min="1" max="10" required><br>
+                        </p>
+                        <p>
+                            <label for="q5">How likely it is that you will recommend our website to others? (1-10):</label>
+                            <input type="number" id="q5" min="1" max="10" required><br>
+                        </p>
+                        <button type="button" id="submitButton">Submit</button>
+                    </form>
+                </div>  
+                <div id="resultContainer" class="result" style="display:none;"></div>      
+            </div>
+            <script src="submit.js"></script>
+        </div>
     </div>
 
-    <math display = "block">
-        <mrow>
-            <mi>f</mi> <!--kintamojo pavadinimas-->
-            <mi>(a)</mi>
-            <mo>=</mo> <!--operatorius-->
-            <mfrac> <!--trupmena, pirmomi eliutė - skaitiklis,
-            antroji - vardiklis-->
-                <mi>1</mi>
-                <mi>2&#928i</mi>
-            </mfrac>
-            <mi>&#8750</mi>
-            <mfrac>
-                <mi>f(z)</mi>
-                <mrow> <!--grupuoja sekančias eilutes į vieną-->
-                    <mi>z</mi>
-                    <mo>-</mo>
-                    <mi>a</mi>
-                </mrow>
-            </mfrac>
-            <mi>dz</mi>
-        </mrow>
-    </math>
+
+    
 
     <footer>
         <h1 style = "text-align: center;">Brandon Johnson</h1>
@@ -209,6 +268,8 @@
             <hr style="width:75%;color:rgb(190, 185, 185);">
         <p style = "text-align: center;">Copyright <b>Alex Smith</b>
          All Rights Reserved</p>
+        <button class = "themeButton" id="themeButton">Switch to Dark Theme</button>
+        <script src="functions.js"></script>
     </footer>
 
 </body>
